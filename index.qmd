@@ -54,15 +54,20 @@ The class encourages students to develop a data-driven perspective and design pi
 
 ## Class Mode
 
-> C442 runs in both Fall and Summer semesters. Note that in contrast to a `regular 15-week semester`, the `6-week Summer session` picks up the pace right from the beginning.
+::: {.callout-note appearance="simple"}
+### Class Mode
 
-> Though the class runs `online with my instructions` at this [website (listed as DBS Guide at Canvas on the side column bar)](https://cisjw.sitehost.iu.edu/dbs/), keep in mind that whenever you have encountered any problem or need any clarification/confirmation, always feel free to contact me via either Canvas Inbox or email (*wangjie\@iun.edu*).
+C442 runs in both Fall and Summer semesters. Note that in contrast to a `regular 15-week semester`, the `6-week Summer session` picks up the pace right from the beginning.
 
-> `Leaving Assignments Comments at Canvas is the last method for time-senstive/urgent message` when you need a quick response from the instructor.
+Though the class runs `online with my instructions` at this [website (listed as DBS Guide at Canvas on the side column bar)](https://cisjw.sitehost.iu.edu/dbs/), keep in mind that whenever you have encountered any problem or need any clarification/confirmation, always feel free to contact me via either Canvas Inbox or email (*wangjie\@iun.edu*).
 
-> When a `virtual meeting via Zoom` leads to effective problem solving, please set up the meeting with me and we can work together to solve the issue.
+For time-sensitive/urgent message, use email instead of assignment comments in order to receive a quick response from the instructor.
 
-> Find the virtual office hours in the syllabus.
+When a `virtual meeting via Zoom` leads to effective problem solving, please set up the meeting with me and we can work together to solve the issue.
+
+Find the virtual office hours on Canvas Home or the syllabus.
+
+:::
 
 ## Canvas Setting
 
@@ -70,9 +75,15 @@ The class encourages students to develop a data-driven perspective and design pi
 
 2.  To ensure you receive the class notifications, please refer to https://community.canvaslms.com/docs/DOC-10624: How do I set my Canvas notification preferences as a student?
 
-3.  Deadline and Time Zone difference: The class is set to Eastern Time Zone(EST). Canvas is based on Eastern Time Zone (EST).
+3.  Deadline and Time Zone difference: 
 
-> Be aware of this time difference if you are in Central Time Zone. If an assignment is due on Friday at 11:59PM (EST), at Canvas, you will see the due time is displayed as 10:59PM, Friday in local time unless you change your user settings at Canvas.
+::: {.callout-important}
+### Time Zone Difference
+
+Be aware of this time difference if you are in Central Time Zone. The class is set to Eastern Time Zone(EST). Canvas is based on Eastern Time Zone (EST).
+
+If an assignment is due on Friday at 11:59PM (EST), at Canvas, you will see the due time is displayed as 10:59PM, Friday in local time unless you change your user settings at Canvas.
+:::
 
 ## Deadline Setting
 
