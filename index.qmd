@@ -1,0 +1,141 @@
+---
+title: "Class Information"
+execute:
+  warning: false
+---
+
+<!-- {{< include _setup.qmd >}}-->
+
+
+```{r}
+#| include: false
+#| eval: false
+1+1
+```
+
+```{sql}
+#| connection: flight
+#| label: tbl-flight.flights
+#| tbl-cap: listing flights table
+#| 
+-- sql comment
+select * 
+from flights
+;
+```
+
+```{mermaid}
+%%| echo: false
+graph TB
+    w1-->a(Machine Learning Types)-->|walkthrough|a1(k-Nearest Neighbors Classification)-->|term|a2(Confusion Matrix)-->|term, scikit-learn|a3(Performance Metrics)-->|hands-on|a4(Performing Model Evaluation)-->|evaluation method|a5(K-Fold Cross-Validation)-->|term technique coding|a6(Model Selection)-->|technique coding|a7(Hyperparameter Tuning)
+    
+    p1-->b(help Command)-->b1(Functions/Methods 1)-->b2(Functions/Methods 2)-->b3(Random Number Generation)-->b4(Module Programming)-->b5(A Game of Chance Craps)-->b6(The Tortoise and the Hare)
+
+
+    a1-->s1[py-script<br>Jupyter-Notebook<br>Colab<br>NumPy Scikit-Learn Pandas Seaborn Matplotlib];a2-->s1;a3-->s1;a4-->s1
+    style w1 fill:#80deb2,stroke:#333,stroke-width:2px
+    style w2 fill:#80deb2,stroke:#333,stroke-width:2px
+    style w3 fill:#80deb2,stroke:#333,stroke-width:2px
+    style s1 fill:#e4c9b4,stroke:#333,stroke-width:2px
+    style p1 fill:#e4c9b4,stroke:#333,stroke-width:2px
+```
+
+More and more data- and computer-related jobs requires a medium or advanced SQL and data management skills. And we have students in C442 from `all kinds of majors`, including Data Science (ds), Computer Science (cs), Computer Information Systems (cis), Actuarial Science (acs), Informatics (info) and non-computer major also.
+
+Being in alignment with critical thinking, problem-solving skills and teamwork, C442 aims to be hands-on oriented. The class intends to help students adapt to a rapidly-changing job market.
+
+The design of C442 was motivated by bridging the gap between classroom learning and employment and achieving a sound balance between the theoretic and pragmatic aspects. The class activities are more tilted towards hands-on learning without loss of fundamentals.
+
+In computer-related job market, many in-demand skills did not even exist five years ago. And we probably would not be able to anticipate exactly what employers will be looking for in the next five years. Thus, class materials are maintained on a regular basis to keep abreast of current trends and latest technologies in the field.
+
+The class encourages students to develop a data-driven perspective and design pipeline-like framework for data management and processing. A pipeline consists of multiple pieces between two ends; every two pieces are connected by an intermediate interface. The content, i.e., data, is flowing through the pieces in the order. The upstream database technology has a profound effect on downstream services and user experience in terms of the quality, credibility and performance.
+
+<!-- Yet these skills are often not given enough attention, despite how important and necessary they are. -->
+
+## Class Mode
+
+> C442 runs in both Fall and Summer semesters. Note that in contrast to a `regular 15-week semester`, the `6-week Summer session` picks up the pace right from the beginning.
+
+> Though the class runs `online with my instructions` at this [website (listed as DBS Guide at Canvas on the side column bar)](https://cisjw.sitehost.iu.edu/dbs/), keep in mind that whenever you have encountered any problem or need any clarification/confirmation, always feel free to contact me via either Canvas Inbox or email (*wangjie\@iun.edu*).
+
+> `Leaving Assignments Comments at Canvas is the last method for time-senstive/urgent message` when you need a quick response from the instructor.
+
+> When a `virtual meeting via Zoom` leads to effective problem solving, please set up the meeting with me and we can work together to solve the issue.
+
+> Find the virtual office hours in the syllabus.
+
+## Canvas Setting
+
+1.  Open Canvas Assignments. On top right corner of Assignments page, press **Show by Group**. This gives you a navigation-friendly view of assignments by their associated part.
+
+2.  To ensure you receive the class notifications, please refer to https://community.canvaslms.com/docs/DOC-10624: How do I set my Canvas notification preferences as a student?
+
+3.  Deadline and Time Zone difference: The class is set to Eastern Time Zone(EST). Canvas is based on Eastern Time Zone (EST).
+
+> Be aware of this time difference if you are in Central Time Zone. If an assignment is due on Friday at 11:59PM (EST), at Canvas, you will see the due time is displayed as 10:59PM, Friday in local time unless you change your user settings at Canvas.
+
+## Deadline Setting
+
+> You can either work on a faster pace and get ahead of the schedule, or follow the deadlines.
+
+By default,
+
+-   **A discussion forum assignment never accepts any posts and comments after the deadline**. No credit will be issued if you do not participate in the forum during its scheduled period.
+
+-   The items in **P1 Submission group** come with a one-week extension.
+
+-   **Other types of assignment has a deadline with a two-week extension**, except for the ones in the last two weeks.
+
+-   Each required assignment in Canvas is set with two dates: `due` date and `until` date. This implies the work still be accepted until the `until` day. Whether or not a few percents taken away will depend on the actual average performance of the class.
+
+## Submission Format
+
+Open Canvas Assignments. On top right corner of Assignments page, press **Show by group**. This gives you the best view of assignments by their associated part.
+
+In general,
+
+-   Upload your work to the target item in Canvas Assignments
+-   If one submission consists of multiple documents, scripts and other types of file, compress them in a single file and upload it.
+-   Most of submission require *screen recording*.
+
+> To Create Screen Recording
+
+-   PC
+    -   Refer to [Official guide](https://support.microsoft.com/en-us/windows/use-a-screen-reader-to-record-your-screen-with-xbox-game-bar-5328cd25-9046-4472-8a14-c485f138802c)
+    -   To enable XBox Game Bar, press `Windowsl ogo Key + I`
+    -   To display, press `Windows logo key + G`
+-   Mac: Press `Command + Shift + 5`
+
+## Resource Package {#dbsarchive}
+
+The class resource package `dbs_archive.zip` contains text, slides, data files, SQL dump scripts for replicating databases and some of design diagrams as well.
+
+To download the package `dbs_archive.zip`, go to **Canvas-\>Files**.
+
+## Required Book {#book}
+
+The page numbers used in the class are based on the 14th edition.
+
+> *The global edition of the textbook is available in the resource package*.
+
+-   Option 1: Database Processing Fundamentals, Design, and Implementation. 14th edition. David M. Kroenke and David J. Auer. Prentice Hall. ISBN-13: 9780133878998
+
+-   Option 2: (Global Edition) Database Processing: Fundamentals, Design, and Implementation 14th. David M. Kroenke and David Auer. ISBN: 9781292107639
+
+## Welcome
+
+```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F}
+cat(
+'<iframe width="560" height="315" src="https://www.youtube.com/embed/NzX2EY1LUBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+)
+```
+
+## Syllabus
+
+-   Canvas
+
+## Instructor
+
+```{r echo=FALSE}
+knitr::include_url("https://cisjw.sitehost.iu.edu")
+```

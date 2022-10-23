@@ -1,0 +1,386 @@
+---
+title: Topics & Outcomes
+---
+
+
+
+```{r}
+#| include: false
+#| eval: false
+print(1+1)
+```
+
+
+
+```{sql}
+#| connection: flight
+#| label: tbl-flight.flights
+#| tbl-cap: listing flights table
+#| 
+-- sql comment
+select * 
+from flights
+;
+```
+
+## Parts
+
+The table of content is displayed in the `main toc` on the left column of this page. The content is divided into parts. The title of each part begins with letter P in uppercase.
+
+![Navigate](imgs/dbs_site_toc.png)
+
+Refer to the screenshot above. In the main toc, click a part's title, say **P2 PROJECT SQLite3**. This opens the Home page and the page gives an overview of the part. The content list of the current page is displayed in the **secondary toc** on the right column.
+
+> Before studying a part, you should always read the Home page of the part.
+
+> In each part, you must ensure that you are very clear about what to study and what to submit. If not, always feel free to contact the instructor.
+
+The following parts are scheduled for the class:
+
+-   `P1-P9`
+
+-   Three exams:
+
+    -   `<EXAM1>`, `<EXAM2>`, `<EXAM3>`
+    -   [Sample Questions](#samplequestions) will be embedded into the three exams.
+
+-   There are `three Project parts`. The current plan is tentative; during the last two weeks of the semester, you choose one.
+
+    -   `<P5 PROJECT SQL Analytics>`
+    -   `<P7 PROJECT DESIGN>`
+    -   `<P12 PROJECT DATABASE>`
+
+-   *Other parts are currently disabled*.
+
+
+## Topics
+
+### P1, P2 and P3
+
+```{=html}
+<figure class="figure">
+<p><img src="https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgIGEoMS5PdmVydmlldyAmIFNvZnR3YXJlPGJyPjEuNSB3ZWVrcyktLT5hMVsuQ2hhcHRlciAxIEludHJvZHVjdGlvbl0tLT5hc1xuICAgIGEtLT5hMlsuRGF0YWJhc2UgdHlwZXNdLS0-YXNbUDEgc3VibWlzc2lvbjxicj4xLjUgd2Vla3NdXG4gICAgYS0tPmEzWy5Tb2Z0d2FyZV0tLT5hc1xuICAgIHcxKEZ1bmRhbWVudGFsczxicj4pO1xuICAgIGFzLS0-dzFcblxuICAgIGIoMi5TUUxpdGUzIFByb2plY3Q8YnI-MiB3ZWVrcyk7IFxuICAgIGIxW0RhdGFiYXNlIFNjaGVtYTxicj5JbXBsZW1lbnQ8YnI-UmVhZCBVcGRhdGUgRGVsZXRlPGJyPkZLLCBUcmlnZ2VyPGJyPkxvb2t1cCB0YWJsZTxicj5Dcm9zcyBwcm9kdWN0LCBKb2luPGJyPkltcG9ydCwgRXhwb3J0PGJyPkRhdGFiYXNlIER1bXA8YnI-TWlncmF0ZTxicj5SZXZlcnNlIEVuZ2luZWVyXS0tPmJcbiAgICBiLS0-fFAyIHN1Ym1pc3Npb248YnI-MiB3ZWVrc3x3MVxuXG4gICAgYygzLlNRTCBCYXNpY3M8YnI-Q2hhcHRlciAyPGJyPjIgd2Vla3MpXG4gICAgYy0tPmMxW09iamVjdGl2ZXNdLS0-Y3NcbiAgICBjLS0-YzJbUXVlcnkgdmVoaWNsZXNdLS0-Y3NcbiAgICBjLS0-YzNbUXVlcnkgQ2FwZUNvZGRdLS0-Y3NcbiAgICBjcyhQMyBzdWJtaXNzaW9uKS0tPncxXG5cblxuICAgIHN0eWxlIHcxIGZpbGw6I2VjY2I0OCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgYSBmaWxsOiNlY2NiNDgsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIGIgZmlsbDojZWNjYjQ4LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSBjIGZpbGw6I2VjY2I0OCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgYXMgZmlsbDojZWY5ZWMzLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSBjcyBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Topics diagram: P1, P2 and P3</figcaption><p></p>
+</figure>
+```
+
+
+
+
+### P4
+
+```{=html}
+<figure class="figure">
+<p><img src="https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgdzIoNC5BZHZhbmNlZCBTUUwgQW5hbHl0aWNzPGJyPjIgd2Vla3MpO1xuICAgIFxuICAgIHcyLS0-dzIxKFdpbmRvdyBGdW5jdGlvbiktLT53MjJcbiAgICB3Mi0tPncyMyhEYXRhIEJpbmluZyktLT53MjJcbiAgICB3Mi0tPncyNChKb2luKS0tPncyMlxuICAgIHcyLS0-dzI1KENvbW1vbiBUYWJsZSBFeHByZXNzaW9uKS0tPncyMlxuICAgIHcyLS0-dzI2KFNldCBPcGVyYXRpb25zKS0tPncyMlxuICAgIHcyMltQNCBzdWJtaXNzaW9uXS0tPncyZXhhbVtFeGFtMV07XG4gICAgdzItLT5lWzUuIFBST0pFQ1QgU1FMIEFuYWx5dGljczxicj5zb2NpYWwgbWVkaWEgZGF0YV07XG4gICAgc3R5bGUgdzIgZmlsbDojZTRjOWI0LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICAgc3R5bGUgdzIyIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzJleGFtIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4IFxuICAgIHN0eWxlIGUgZmlsbDojMTZjNWI3LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHhcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Topics diagram: P14</figcaption><p></p>
+</figure>
+```
+
+
+### P6
+
+```{=html}
+<figure class="figure">
+<p><img src="https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgIHc0KDYuRGF0YWJhc2UgRGVzaWduPGJyPkNoYXB0ZXJzIDMsNCw1LDY8YnI-MiB3ZWVrcyk7XG4gICAgdzQtLT53MzEoNy4gUFJPSkVDVCBEZXNpZ248YnI-RGVzaWduICYgUmVkZXNpZ24gcmVsYXRpb25hbCBkYXRhKTtcblxuICAgIHc0LS0-ZyhSZWxhdGlvbmFsIG1vZGVsPGJyPkNoYXB0ZXJzIDMsNCktLT5nc1tDYXQxLWtleXNdLS0-dzRzW1A2IHN1Ym1pc3Npb25dXG4gICAgdzQtLT5oKGRlc2lnbiB3LyBCQyBub3JtYWwgZm9ybTxicj5DaGFwdGVyIDQpLS0-aHNbQ2F0Mi1ub3JtYWwgZm9ybV0tLT53NHNcbiAgICB3NC0tPmkoQ29tbW9uIERhdGEgUHJvYmxlbXM8YnI-Q2hhcHRlciA0KS0tPmlzWy5UQkRdLS0-dzRzXG4gICAgdzQtLT5rKERhdGEgTW9kZWxpbmc8YnI-Q2hhcHRlciA1KS0tPmtzW0NhdDMtZW50aXR5IHJlbGF0aW9uc2hpcCBkaWFncmFtPGJyPkNhdDQtcmVxdWlyZW1lbnRzIGluIGRhdGEgbW9kZWxpbmc8YnI-RXhlcmNpc2U6bWF4aW11bSBtaW5pbnVtIGNhcmRpbmFsaXR5XS0tPnc0c1xuICAgIHc0LS0-bShNb2RlbCBUcmFuc2Zvcm1hdGlvbjxicj5DaGFwdGVyIDYpLS0-bXNbQ2F0NS10cmFuc2Zvcm0gUiB0byBGSyBvciB0YWJsZV0tLT53NHNcbiAgICB3NHMtLT53NGV4YW1bRXhhbTJdO1xuXG5cbiAgICBzdHlsZSB3NCBmaWxsOiNlNGM5YjQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIHc0ZXhhbSBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIHczMSBmaWxsOiMxNmM1Yjcsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuIHN0eWxlIHc0cyBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Topics diagram: P6</figcaption><p></p>
+</figure>
+```
+
+
+### P8
+
+```{=html}
+<figure class="figure">
+<p><img src="https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgIGZbOC5JbXBsZW1lbnRhdGlvbjxicj5TUUwgUHJvZ3JhbW1pbmc8YnI-VmlldyBSaWRnZSBHYWxsZXJ5IENoYXB0ZXJzIDcsODxicj4yIHdlZWtzXTtcbiAgICBmNi0tPmZzMVsucDgtQ2F0MS1zY2hlbWEgZHJvcCBjcmVhdGUgYWx0ZXJdLS0-ZnNcbiAgICBmNi0tPmZzMlsucDgtQ2F0Mi1jcmVhdGUgdGFibGUgY29sdW1uIGNvbnN0cmFpbnRzPGJyPnA4LUNhdDMtaW5zZXJ0L2RlbGV0ZS91cGRhdGUvdHJ1bmNhdGUgcm93c10tLT5mc1xuICAgIGYtLT5mNihWaWV3IFJpZGdlIEdhbGxlcnk8YnI-RERMLCBETUwpXG4gICAgXG4gICAgZi0tPmYxKFZpZXcpLS0-ZnMzWy5wOC1DYXQ0LXZpZXcgY3JlYXRlL2Ryb3BdLS0-ZnNcbiAgICBmLS0-ZjIoVHJpZ2dlciktLT5mczRbLnA4LUNhdDUtdHJpZ2dlcl0tLT5mc1xuICAgIGYtLT5mMyhTdG9yZWQgUHJvY2VkdXJlKS0tPmZzNVsuXS0tPmZzXG4gICAgZnNbUDggc3VibWlzc2lvbl0tLT5leGFtM1xuICAgIGV4YW0zKEV4YW0zKTtcbiAgICBzdHlsZSBmIGZpbGw6I2U0YzliNCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgZXhhbTMgZmlsbDojZWY5ZWMzLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Topics diagram: P8</figcaption><p></p>
+</figure>
+```
+
+
+### P9, P10, P11, P13
+
+```{=html}
+<figure class="figure">
+<p><img src="https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgIHc2KDkuRGF0YWJhc2UgQWRtaW5pc3RyYXRpb24gJiBTZWN1cml0eTxicj5DaGFwdGVyIDkgRGF0YWJhc2UgQWRtaW5pc3RyYXRpb248YnI-MS41IHdlZWtzKVxuICAgIHc2LS0-dzYwW1JlYWQgQ2hhcHRlciA5XS0tPnc2MDBbLlA5LVByYWN0aWNlIENoYXB0ZXIgOV0tLT53NnNcbiAgICB3Ni0tPnc2MVtTUUwgaW5qZWN0aW9uIGF0dGFja10tLT53NjEwWy5QOS1Fc3NheSBxdWVzdGlvbnNdLS0-dzZzXG4gICAgdzYtLT53NjJbUmFjZSBjb25kaXRpb25dLS0-dzYxMFxuICAgIHc2LS0-dzYzW0VuY3J5cHRpb25dLS0-dzYxMFxuICAgIHc2LS0-dzY0W1dlYiBBUEldXG4gICAgdzZzW1A5IHN1Ym1pc3Npb25dIFxuXG4gICAgdzgoMTAuTm9TUUwgRGF0YWJhc2UpLS0-dzgxKE1vbmdvREIpO1xuICAgIHc3KDEzLkxhcmdlLXNjYWxlIERhdGEgUHJvY2Vzc2luZyktLT53NzEoQXBhY2hlIFNwYXJrPGJyPi4pO1xuXG4gICAgdzQxKDExLkRhdGEgSW50ZWdyYXRpb248YnI-KTtcblxuICAgIHc0MS0tPnc0MTFbRGF0YSBwaXBlbGluZSB0ZXJtc11cbiAgICB3NDEtLT53NDEyW0Rlc2lnbiBhIHBpcGVsaW5lXVxuICAgIHc0MS0tPnc0MTNbUHl0aG9uIFNRTGl0ZTMgbW9kdWxlXVxuICAgIHc0MS0tPnc0MTRbU1FMQWxjaGVteSAmIFBhbmRhc11cblxuICAgIHN0eWxlIHc4IGZpbGw6IzBjYzAwMCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzcgZmlsbDojNjZhMWQyLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSB3NiBmaWxsOiNlNGM5YjQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgICAgIHN0eWxlIHc0MSBmaWxsOiNhNGM5YjQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIHc2cyBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Topics diagram: P9, P10, P11, P13</figcaption><p></p>
+</figure>
+```
+
+
+
+```{=html}
+<!--
+![Class Topics Diagram](https://mermaid.ink/img/eyJjb2RlIjoiXG5ncmFwaCBMUlxuICAgIGEoMS5PdmVydmlldyAmIFNvZnR3YXJlPGJyPjEuNSB3ZWVrcyktLT5hMVsuQ2hhcHRlciAxIEludHJvZHVjdGlvbl0tLT5hc1xuICAgIGEtLT5hMlsuRGF0YWJhc2UgdHlwZXNdLS0-YXNbUDEgc3VibWlzc2lvbjxicj4xLjUgd2Vla3NdXG4gICAgYS0tPmEzWy5Tb2Z0d2FyZV0tLT5hc1xuICAgIHcxKEZ1bmRhbWVudGFsczxicj4pO1xuICAgIGFzLS0-dzFcblxuICAgIGIoMi5TUUxpdGUzIFByb2plY3Q8YnI-MiB3ZWVrcyk7IFxuICAgIGIxW0RhdGFiYXNlIFNjaGVtYTxicj5JbXBsZW1lbnQ8YnI-UmVhZCBVcGRhdGUgRGVsZXRlPGJyPkZLLCBUcmlnZ2VyPGJyPkxvb2t1cCB0YWJsZTxicj5Dcm9zcyBwcm9kdWN0LCBKb2luPGJyPkltcG9ydCwgRXhwb3J0PGJyPkRhdGFiYXNlIER1bXA8YnI-TWlncmF0ZTxicj5SZXZlcnNlIEVuZ2luZWVyXS0tPmJcbiAgICBiLS0-fFAyIHN1Ym1pc3Npb248YnI-MiB3ZWVrc3x3MVxuXG4gICAgYygzLlNRTCBCYXNpY3M8YnI-Q2hhcHRlciAyPGJyPjIgd2Vla3MpXG4gICAgYy0tPmMxW09iamVjdGl2ZXNdLS0-Y3NcbiAgICBjLS0-YzJbUXVlcnkgdmVoaWNsZXNdLS0-Y3NcbiAgICBjLS0-YzNbUXVlcnkgQ2FwZUNvZGRdLS0-Y3NcbiAgICBjcyhQMyBzdWJtaXNzaW9uKS0tPncxXG5cbiAgICB3Mig0LkFkdmFuY2VkIFNRTCBBbmFseXRpY3M8YnI-MiB3ZWVrcyk7XG4gICAgXG4gICAgdzItLT53MjEoV2luZG93IEZ1bmN0aW9uKS0tPncyMlxuICAgIHcyLS0-dzIzKERhdGEgQmluaW5nKS0tPncyMlxuICAgIHcyLS0-dzI0KEpvaW4pLS0-dzIyXG4gICAgdzItLT53MjUoQ29tbW9uIFRhYmxlIEV4cHJlc3Npb24pLS0-dzIyXG4gICAgdzItLT53MjYoU2V0IE9wZXJhdGlvbnMpLS0-dzIyXG4gICAgdzIyW1A0IHN1Ym1pc3Npb25dLS0-dzJleGFtW0V4YW0xXTtcbiAgICB3Mi0tPmVbNS4gUFJPSkVDVCBTUUwgQW5hbHl0aWNzPGJyPnNvY2lhbCBtZWRpYSBkYXRhXTtcbiBcbiAgICB3NCg2LkRhdGFiYXNlIERlc2lnbjxicj5DaGFwdGVycyAzLDQsNSw2PGJyPjIgd2Vla3MpO1xuICAgIHc0LS0-dzMxKDcuIFBST0pFQ1QgRGVzaWduPGJyPkRlc2lnbiAmIFJlZGVzaWduIHJlbGF0aW9uYWwgZGF0YSk7XG5cbiAgICB3NC0tPmcoUmVsYXRpb25hbCBtb2RlbDxicj5DaGFwdGVycyAzLDQpLS0-Z3NbQ2F0MS1rZXlzXS0tPnc0c1tQNiBzdWJtaXNzaW9uXVxuICAgIHc0LS0-aChkZXNpZ24gdy8gQkMgbm9ybWFsIGZvcm08YnI-Q2hhcHRlciA0KS0tPmhzW0NhdDItbm9ybWFsIGZvcm1dLS0-dzRzXG4gICAgdzQtLT5pKENvbW1vbiBEYXRhIFByb2JsZW1zPGJyPkNoYXB0ZXIgNCktLT5pc1suVEJEXS0tPnc0c1xuICAgIHc0LS0-ayhEYXRhIE1vZGVsaW5nPGJyPkNoYXB0ZXIgNSktLT5rc1tDYXQzLWVudGl0eSByZWxhdGlvbnNoaXAgZGlhZ3JhbTxicj5DYXQ0LXJlcXVpcmVtZW50cyBpbiBkYXRhIG1vZGVsaW5nPGJyPkV4ZXJjaXNlOm1heGltdW0gbWluaW51bSBjYXJkaW5hbGl0eV0tLT53NHNcbiAgICB3NC0tPm0oTW9kZWwgVHJhbnNmb3JtYXRpb248YnI-Q2hhcHRlciA2KS0tPm1zW0NhdDUtdHJhbnNmb3JtIFIgdG8gRksgb3IgdGFibGVdLS0-dzRzXG4gICAgdzRzLS0-dzRleGFtW0V4YW0yXTtcbiAgICBcbiAgICBmWzguSW1wbGVtZW50YXRpb248YnI-U1FMIFByb2dyYW1taW5nPGJyPlZpZXcgUmlkZ2UgR2FsbGVyeSBDaGFwdGVycyA3LDg8YnI-MiB3ZWVrc107XG4gICAgZjYtLT5mczFbLnA4LUNhdDEtc2NoZW1hIGRyb3AgY3JlYXRlIGFsdGVyXS0tPmZzXG4gICAgZjYtLT5mczJbLnA4LUNhdDItY3JlYXRlIHRhYmxlIGNvbHVtbiBjb25zdHJhaW50czxicj5wOC1DYXQzLWluc2VydC9kZWxldGUvdXBkYXRlL3RydW5jYXRlIHJvd3NdLS0-ZnNcbiAgICBmLS0-ZjYoVmlldyBSaWRnZSBHYWxsZXJ5PGJyPkRETCwgRE1MKVxuICAgIFxuICAgIGYtLT5mMShWaWV3KS0tPmZzM1sucDgtQ2F0NC12aWV3IGNyZWF0ZS9kcm9wXS0tPmZzXG4gICAgZi0tPmYyKFRyaWdnZXIpLS0-ZnM0Wy5wOC1DYXQ1LXRyaWdnZXJdLS0-ZnNcbiAgICBmLS0-ZjMoU3RvcmVkIFByb2NlZHVyZSktLT5mczVbLl0tLT5mc1xuICAgIGZzW1A4IHN1Ym1pc3Npb25dLS0-ZXhhbTNcbiAgICBleGFtMyhFeGFtMyk7XG5cbiAgICB3NSgxMi4gUFJPSkVDVCBEYXRhYmFzZTxicj5EZXNpZ24gJiBSZWRlc2lnbiByZWxhdGlvbmFsIGRhdGE8YnI-SW1wbGVtZW50PGJyPlZpZXcgJiBUcmlnZ2VyPGJyPlJlcG9ydGluZzxicj5DbGllbnQgYWNjZXNzKTtcbiAgICB3NS0tPnc0XG4gICAgdzUtLT5mXG5cbiAgICB3Nig5LkRhdGFiYXNlIEFkbWluaXN0cmF0aW9uICYgU2VjdXJpdHk8YnI-Q2hhcHRlciA5IERhdGFiYXNlIEFkbWluaXN0cmF0aW9uPGJyPjEuNSB3ZWVrcylcbiAgICB3Ni0tPnc2MFtSZWFkIENoYXB0ZXIgOV0tLT53NjAwWy5QOS1QcmFjdGljZSBDaGFwdGVyIDldLS0-dzZzXG4gICAgdzYtLT53NjFbU1FMIGluamVjdGlvbiBhdHRhY2tdLS0-dzYxMFsuUDktRXNzYXkgcXVlc3Rpb25zXS0tPnc2c1xuICAgIHc2LS0-dzYyW1JhY2UgY29uZGl0aW9uXS0tPnc2MTBcbiAgICB3Ni0tPnc2M1tFbmNyeXB0aW9uXS0tPnc2MTBcbiAgICB3Ni0tPnc2NFtXZWIgQVBJXVxuICAgIHc2c1tQOSBzdWJtaXNzaW9uXSBcblxuICAgIHc4KDEwLk5vU1FMIERhdGFiYXNlKS0tPnc4MShNb25nb0RCKTtcblxuICAgIHc0MSgxMS5EYXRhIEludGVncmF0aW9uPGJyPik7XG4gICAgdzUtLT53NDE7XG4gICAgdzQxLS0-dzQxMVtEYXRhIHBpcGVsaW5lIHRlcm1zXVxuICAgIHc0MS0tPnc0MTJbRGVzaWduIGEgcGlwZWxpbmVdXG4gICAgdzQxLS0-dzQxM1tQeXRob24gU1FMaXRlMyBtb2R1bGVdXG4gICAgdzQxLS0-dzQxNFtTUUxBbGNoZW15ICYgUGFuZGFzXVxuXG5cbiB3NygxMy5MYXJnZS1zY2FsZSBEYXRhIFByb2Nlc3NpbmcpLS0-dzcxKEFwYWNoZSBTcGFyazxicj4uKTtcbiAgIFxuXG4gICAgc3R5bGUgdzggZmlsbDojMGNjMDAwLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSB3MSBmaWxsOiNlY2NiNDgsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIGEgZmlsbDojZWNjYjQ4LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSBiIGZpbGw6I2VjY2I0OCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgYyBmaWxsOiNlY2NiNDgsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuXG5cblxuICAgIHN0eWxlIHc3IGZpbGw6IzY2YTFkMixzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzUgZmlsbDojNjZhMWQyLHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICBzdHlsZSB3MiBmaWxsOiNlNGM5YjQsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIFxuIFxuICAgIHN0eWxlIHc0IGZpbGw6I2U0YzliNCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzUgZmlsbDojMTZjNWI3LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHhcbiAgICBzdHlsZSBmIGZpbGw6I2U0YzliNCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzYgZmlsbDojZTRjOWI0LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDoycHhcbiAgICAgIFxuXG4gICAgc3R5bGUgdzQxIGZpbGw6I2E0YzliNCxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzJleGFtIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgc3R5bGUgdzRleGFtIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG5cbiAgICBzdHlsZSBleGFtMyBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIHc2cyBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIHczMSBmaWxsOiMxNmM1Yjcsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjRweFxuICAgIHN0eWxlIGUgZmlsbDojMTZjNWI3LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHhcblxuICAgIHN0eWxlIGFzIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgIHN0eWxlIHcyMiBmaWxsOiNlZjllYzMsc3Ryb2tlOiMzMzMsc3Ryb2tlLXdpZHRoOjJweFxuICAgIHN0eWxlIGNzIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICAgIHN0eWxlIGZzIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gc3R5bGUgdzRzIGZpbGw6I2VmOWVjMyxzdHJva2U6IzMzMyxzdHJva2Utd2lkdGg6MnB4XG4gICBcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19)
+-->
+```
+
+```{=html}
+<!--
+## 6-Week Session
+
+> I would _adjust the class schedule as much as possible to maximizing learning and enhancing your experience for a 6-week duration_.
+
+> The following is **a tentative plan for a 6-week Summer session only**. The instructor will decide whether or not to apply the plan. 
+
+- After an introduction to database, a _SQLite3_ project and _SQL_ basics in **the first three parts**, the **subsequent parts** in this website cover:
+  1. `Advanced SQL`: (ds, cs, cis, info, acs)
+  1. `A SQL project`: (all)
+  1. `Data modeling & database design`: (cs, cis, info, ds)
+  1. `SQL DDL (data definition language) and DML (manipulation)`: (ds, cs, cis, info)
+  1. `Trigger and stored procedure`: (cs, cis, ds, info)
+  1. `A database project from design to implement and the use`: (cs, cis, ds, info)
+  1. `SQL in Python`: (all)
+  1. `Database administration & security`: (cs, cis, info)
+  1. `Large-scale data processing`: (ds, cs, cis, info)
+  1. `NoSQL database`: (all)
+
+> **The Tentative Plan**: After completing the first three parts, according to your career preference, either yourself or the instructor may select three more parts or projects for you according to your career preference. (_You can always do all the parts if your schedule permits._) You may either do them individually or team up with another student. 
+
+-->
+```
+## Learning Outcomes
+
+### Overview
+
+1.  Overview of Database Technology
+2.  Database Types
+3.  Database Software
+
+### Database Query & Transform
+
+1.  SQL Types & Dialects
+
+2.  SQL Variables
+
+3.  SQL Keywords
+
+4.  SQL String Functions
+
+5.  SQL Decision: CASE WHEN, Ternary IF-expression, IFNULL,
+
+6.  SQL Operators: EXISTS, NOT EXISTS, IN, NOT IN
+
+7.  Manage NULL values
+
+8.  Use SELECT framework:
+
+    -   Data Filter
+    -   Data Mutate
+    -   Data Aggregate
+    -   SQL Window Functions over Partitions
+
+9.  Access Multiple Tables:
+
+    -   Join Data: cross-join, equi-join, inner-join, outer-join, anti-join
+    -   CTE (Common Table Expression)
+    -   Derived Table Expression
+    -   Embedded Subquery
+    -   Union, intersect, except
+
+10. Data Binning in SQL
+
+### Database Design
+
+1.  The Relational Model and Normalization
+
+    -   Identify modification anomalies
+    -   Define *normal forms*
+    -   Define BCNF
+    -   Identify *Functional Dependency* using SQL
+    -   Verify primary key using SQL
+    -   Design *updatable database* vs. *read-only database*
+
+2.  Database Redesign Using Normalization
+
+3.  Handle Common Data Problems:
+
+    -   Multivalue, multicolumn problem
+    -   Inconsistent values
+    -   Missing values
+
+4.  Database *Reverse Engineering*
+
+5.  Data Modeling with Entity-Relationship Model
+
+6.  Know Design Patterns in database modeling
+
+    -   Line-item pattern
+    -   1:1, 1:n, m:n Associations
+    -   Supertype & subtype
+
+7.  Transform Data Models into Database Designs
+
+    -   Transformation rules
+    -   Determine data types
+    -   Column constraints: (not) null, unique, check, primary key
+    -   Table constraints: primary key, foreign key, check
+
+8.  Database *Forward Engineering*
+
+### Database Implementation
+
+-   Write DDL to construct databases
+-   Use DDL (Data Definition Language) to manage database tables
+-   Write SQL Trigger to automate event-driven processing
+-   Write SQL View to store routine reports in virtual tables
+-   Write SQL Stored Procedure for code reuse in application programs
+
+### Database Administration & Security
+
+-   Managing Multi-user Databases
+-   Managing Databases with a popular DBMS
+-   SQL Injection Attack
+-   Race Condition
+-   SQL Encryption
+
+### NoSQL Database & Big data processing
+
+-   MongoDB
+-   Apache Spark
+
+## Sample Questions {#samplequestions}
+
+After completing the class, I expect you are able to discuss the following questions, but not limited to:
+
+### Database Types {#quest1}
+
+1.  Tell us about some of the most difficult problems relevant to data (if any) you worked on and how you solved them.
+2.  Give a few principles which help us choose between relational and non-relational database. For each type, list some database products currently popular in the database market.
+3.  How do you choose database products for OLTP and OLAP, respectively? What are the factors you would take into consideration?
+4.  Distinguish Row-oriented database (row store) from column-oriented database (column store). If a data store is used for aggregating columns to calculate summary statistics, which type of SQL database performs faster? Row store or column store? Why?
+5.  What four properties should be promised for an ACID transaction? Elaborate each property.
+6.  Does relational database require a primary key in every table? Does a relational DBMS allow us to store a data table without a primary key?
+7.  Compare vertical partitions with horizontal partitions in database.
+8.  Distinguish transient/in-memory database from persistent database. Give each a use case example.
+9.  What are the major properties that are prioritized in NoSQL database?
+
+### DBMS {#quest2}
+
+1.  Why should we use a DBMS for data storage and management?
+2.  what are the functions of a DBMS?
+3.  What are the functions of a database applications?
+4.  What is in the metadata?
+5.  Describe multiple roles in a database system and data-related system, and the things you can do in relevant fields
+6.  What are the three database design scenarios
+7.  What is the client-server architecture and the components in database application development?
+8.  Why should we never allow end users to directly access database and run SQL queries in their client programs?
+
+### SQL {#quest3}
+
+1.  List a few database vendors which implement (Standard-)SQL, T-SQL (Transact-SQL) and PL/SQL, respectively. (Related to [the SQL Types of P3 Home](https://cisjw.sitehost.iu.edu/dbs/p3.html#sql-types))
+
+2.  Both `DISTINCT keyword` and `GROUP BY clause` can list distinct values in a column. Give each an example and explain the difference in terms of their execution plan.
+
+```{sql}
+#| echo: false
+#| eval: false
+#| include: false
+-- The major difference between the DISTINCT and GROUP BY is, GROUP BY operator aggregates data rows into partitions/groups for aggregate values, sum,avg,max,etc; 
+-- whereas DISTINCT is applied to a single column, and removes duplicates and returns the unique values.
+```
+
+1.  Give a SQL Select example of using `ternary if-expression` for conditional counting.
+
+```{sql}
+#| echo: true
+#| eval: false
+#| 
+-- SQL conditional count 
+set @x = 10;
+select count(if(@x > 0, 1, null)) as result;
+set @y = -5;
+select count(if(@y > 0, 1, null)) as result;
+select count(if(@x > 0 and @y > 0, 1, null)) as result;
+```
+
+```{sql}
+#| connection: jsea
+#| echo: true
+#| eval: true
+#| 
+select 
+  count( if (hwy >= 90, 1, NULL)) as cnt_hwy_90_or_higher
+from 
+  vehicles
+;
+```
+
+1.  Both the SQL `WINDOW function` and `GROUP BY clause` separate data rows into partitions/groups and compute an aggregate value, for instance, the total rows in each group. Use an example to illustrate the difference between the resulting table from the SQL `WINDOW function` and `GROUP BY clause`.
+
+2.  Write a statement in MySQL dialect which performs `cross product (cross join)` of two relational tables A and B and returns all the data columns from both tables.
+
+3.  Give a database example of two tables A and B. Write SQL join statements to distinguish multiple join types: cross, `equi-`, `inner-` (left & right), `outer-` (left & right).
+
+4.  How do we break down complex queries using `CTE` in `WITH-AS` clause? Give an example.
+
+```{sql}
+#| echo: false
+#| eval: false
+#| include: false
+-- without CTE
+
+```
+
+```{sql}
+#| echo: false
+#| eval: false
+#| include: false
+-- with CTE
+
+```
+
+1.  Give an example of SQL `CASE WHEN statement` to make more than two decisions in tagging data (generating a new categorical column) in a report.
+
+2.  What is the difference between IN and EXISTS operators? Give each an example.
+
+### Database Design
+
+1.  Reverse engineer a relational database to an enhanced ER diagram.
+2.  Given an ER diagram, e.g. *flight*, *cape_codd* and *vrg* schema. Depict the objects in the ER diagram and interpret the restrictions and constraints which are enforced in each schema.
+3.  From the relational database perspective, is `lookup` table equivalent to `parent table` in one-to-many relationship?
+4.  Do we have to separate data in multiple tables in a relational data store? When should we merge all data into a single table a.k.a de-normalization?
+5.  Define `database normalization`. When should we normalize a database?
+6.  How do we verify whether or not a SQL database is in `BCNF`? Describe the steps in normalizing a database.
+7.  From the operational perspective, how do we pull data from SQL database into a `de-normalized table`?
+
+### Database Implementation
+
+1.  Describe a workflow which you follow to design and implement a new relational database.
+2.  The SQL syntax to define constraints in table creation
+3.  The SQL syntax to create a new relational table with multiple (row) partitions
+4.  How do you utilize SQL `trigger` to automate and accelerate certain database operations, e.g., update, insert and delete, in the database tier?
+5.  Compare table and `view` in a relational database
+6.  What are the advantages of using SQL `stored procedure` in the back-end instead of doing the same processing in a front-end client program?
+
+### Database Administration
+
+1.  In a relational DBMS, how do you create a new user with specific privileges, e.g, read-only, access a specific database only.
+2.  Explain `race condition` in multiuser databases
+3.  What is deadlock? How can it be avoided? How can it be resolved once it occurs?
+4.  Define `rollback` and `rollforward` in a transaction.
+5.  What is a `dirty read`?
+6.  Explain SQL `injection attack`
+
+### NoSQL & Big Data
+
+1.  Name a few popular cloud NoSQL database services. (For instance, Amazon DynamoDB is the one.)
+2.  In relational data, we have schema/database, table/relation, column/attribute, and row/record/tuple. What is the data hierarchy in MongoDB?
+
+### Big Data Processing
+
+1.  For `big data` analytics, name a few database engines or software products.
+2.  What is Apache Spark? And its primary use? Can we execute SQL queries in the Spark?
+
+**Thank you very much for reading through the Class Information Page!** You are ready to launch the class and click the next part P1 OVERVIEW & SOFTWARE.
+
+```{=html}
+<!--
+https://happygitwithr.com/
+The DBS Guide by Jie Wang is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+-->
+```
+
+
+
+
+

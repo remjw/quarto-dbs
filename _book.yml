@@ -1,0 +1,24 @@
+book:
+  title: "&#x2694;&#xFE0F; dbs guide"
+  author: "Jie"
+  date: "10/22/2022"
+  cover-image: cover.png
+  chapters:
+    - index.qmd
+    - part: css.qmd
+      chapters:
+        - css_1.qmd
+        - css_2.qmd
+#    - sklearn-knn.qmd
+    - references.qmd
+
+#  pdf:
+#    documentclass: scrreprt
+#    toc: true
+#    number-sections: true
+#    colorlinks: true
+    # default arrow highlight-style: github
+
+
+
+

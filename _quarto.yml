@@ -1,5 +1,58 @@
 project:
-  title: "quarto-dbs"
+  title: "DBS Guide"
+  type: website
+  output-dir: _site
+  execute-dir: project
+  pre-render: 
+    - chunk_setup.R
+    - chunk_algorithmengine.R
 
+toc: true
+number-sections: true
+tbl-cap-location: top
 editor: visual
+bibliography: teachref.bib
+#biblio-style: apalike
+reference-location: margin
+citation-location: margin
+
+metadata-files:
+  - _website.yml
+  - _book.yml
+
+#profile:
+#  default: website
+#  group:
+#    - [website, book]
+
+
+
+format:
+  html:
+    theme: cosmo # litera # cosmo
+    css: style_quarto.css
+    cover-image: cover.png
+    number-sections: true
+    toc: true
+    toc-depth: 4
+    code-fold: show #true
+    code-summary: "cell"
+    code-overflow: scroll
+    code-line-numbers: true
+    code-copy: true #hover
+    #code-block-bg: true
+    code-block-bg: "#fcfcfc" #"#383838"  #"#708090"
+    code-block-border-left: "#d6cdcc"
+    highlight-style: atom-one-dark #ayu-dark
+
+
+#  pdf:
+#    documentclass: scrreprt
+#    toc: true
+#    number-sections: true
+#    colorlinks: true
+    # default arrow highlight-style: github
+
+
+
 

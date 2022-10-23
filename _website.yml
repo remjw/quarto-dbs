@@ -1,0 +1,62 @@
+website:
+  title: "DBS"
+  page-navigation: true
+  page-footer:
+    center:
+      - text: "2022 Created By Jie Wang"
+        #href: about.qmd
+      - text: "Last updated on `r Sys.Date()`"
+  navbar:
+    background: primary
+    search: true
+    left:
+#      - text: "Home"
+ #       file: index.qmd
+      - sidebar:home
+      - sidebar:p1
+      - sidebar:p2
+      - sidebar:p3
+      - sidebar:p4
+      - sidebar:p5
+      - sidebar:p6
+      - sidebar:p7
+
+
+  sidebar:
+    - id: home
+      style: "docked"
+      background: light
+      title: "Class Info."
+      contents:
+        - index.qmd
+        - topic_question.qmd
+
+
+#    - id: p1
+#      title: "Overview & Software"
+#      contents:
+#        - discussion_database.qmd
+
+
+
+
+#    - id: reference
+#      title: "Reference"
+#      contents:
+#        - reference.qmd
+#        # navigation items
+
+  # sidebar:
+  #   style: "docked" #"floating"
+  #   search: true
+  #   contents:
+  #     - section: "Preface"
+  #       contents:
+  #         - index.qmd
+  #     - section: "sklearn"
+  #       contents:
+  #         - sklearn-knn.qmd
+  #     - section: "Reference"
+  #       contents:
+  #         - references.qmd
+
